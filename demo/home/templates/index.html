@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   </head>
+   <body>
+      <h1>Movie Discussions</h1>
+      <p>SEARCH METHOD 1:</p>
+      <form action="search" method="post">
+         <p>
+            <label for="post_name">Input string (post, movie, or genre) </label>
+            <input id="post_name" type="text" name="istring" value="">
+         </p>
+         <p>
+            LIST OF GENRES: ....
+         </p>
+         <p>
+             <input type="radio" name="typeChoice" value="post" checked/>Post
+             <input type="radio" name="typeChoice" value="movie" /> Movie
+             <input type="radio" name="typeChoice" value="genre" /> Genre
+         </p>
+         <p>
+         SEARCH METHOD 2:
+         </p>
+         <p>
+           <label for="kmost">Enter the top K most upvoted posts</label>
+           <input type="number" id="kmost" name="k" min="0" max="100">
+         </p>
+         <p>
+            SEARCH METHOD 3:
+         </p>
+         <p>
+            <label for="year_name"> Print movies made in the Year: </label>
+            <input id="year_name" type="number" name="year" value="">            
+         </p>
+        <p>
+           SEARCH METHOD 4:
+        </p>
+        <p>
+          <label for="word_cloud"> Generate Word Cloud based on ALL COMMENTS: </label>
+          <input type="checkbox" id="word_cloud" name="wordcloud" value="">
+        </p>
+         <p>
+            <label for="limit">Max # results: </label>
+            <select name="limit">
+               <option value="10" selected>10</option>
+               <option value="20">20</option>
+               <option value="50">50</option>
+               <option value="100">100</option>
+            </select>
+         </p>
+         <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+         </p>
+      </form>
+   </body>
+</html>
